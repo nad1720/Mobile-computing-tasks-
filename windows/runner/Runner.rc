@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "birthdaycard" "\0"
+            VALUE "FileDescription", "bussinesscard" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "birthdaycard" "\0"
+            VALUE "InternalName", "bussinesscard" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "birthdaycard.exe" "\0"
-            VALUE "ProductName", "birthdaycard" "\0"
+            VALUE "OriginalFilename", "bussinesscard.exe" "\0"
+            VALUE "ProductName", "bussinesscard" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
