@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
     LatLng latLng = LatLng(position.latitude, position.longitude);
     double speed = position.speed;
 
-    // تحديد نشاط المستخدم بناءً على السرعة الحالية
+    
     if (speed > 2.0) {
       setState(() {
         _userActivity = UserActivity.running;
@@ -100,10 +100,10 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     }
 
-    // إضافة قيمة _userActivity إلى _userActivityStream
+    
     _userActivityStream.add(_userActivity);
 
-    // إعادة بناء واجهة المستخدم
+    
     setState(() {
       _markers.add(Marker(
         width: 80.0,
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
       );
     });
 
-    // تحديث مركز الخريطة
+    
     _mapController.move(latLng, 16);
   }
   void _initSensors() {
@@ -128,7 +128,6 @@ class _MyHomePageState extends State<MyHomePage> {
       double y = event.y;
       double z = event.z;
 
-      // تحديد حركة المستخدم بناءً على قراءات مستشعر accelerometer
       if (x.abs() > y.abs()) {
         if (x > 0) {
           _userActivityStream.add(UserActivity.running);
